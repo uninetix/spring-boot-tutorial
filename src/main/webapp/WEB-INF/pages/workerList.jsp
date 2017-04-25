@@ -3,8 +3,8 @@
 <html>
 <head>
     <title>Lista pracowników</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="webjars/bootstrap/4.0.0-alpha.6-1/css/bootstrap.css" type="text/css" rel="stylesheet" >
+    <script src="webjars/bootstrap/4.0.0-alpha.6-1/js/bootstrap.js"></script>
 </head>
 <body>
 <div class="jumbotron">
