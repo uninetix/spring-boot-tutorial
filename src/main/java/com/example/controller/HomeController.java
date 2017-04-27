@@ -1,6 +1,7 @@
 package com.example.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
@@ -22,5 +23,11 @@ public class HomeController {
         String str = "Strona administratorska";
         mav.addObject("message", str);
         return mav;
+    }
+
+    @RequestMapping(value = "/model", method = RequestMethod.GET)
+    public String hello(Model model) {
+        model.addAttribute("message", "Z czystego Modelu");
+        return "hello";
     }
 }
