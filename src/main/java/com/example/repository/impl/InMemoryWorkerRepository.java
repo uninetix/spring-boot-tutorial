@@ -12,7 +12,7 @@ import java.util.List;
  */
 
 @Repository
-public class InMemoryWorkerRepository implements WorkerRepository{
+public class InMemoryWorkerRepository implements WorkerRepository {
 
     private List<Worker> workers;
 
