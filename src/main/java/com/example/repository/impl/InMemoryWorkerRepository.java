@@ -30,4 +30,10 @@ public class InMemoryWorkerRepository implements WorkerRepository {
     public List<Worker> getAllWorkers() {
         return workers;
     }
+
+    @Override
+    public boolean addWorker(Worker worker) {
+        return workers.add(worker);
+    }
+
 }

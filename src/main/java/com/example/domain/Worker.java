@@ -11,6 +11,15 @@ public class Worker {
     private int departmentID;
     private int role;
 
+    public Worker() {
+        //this.workerId = -1;
+        this.firstName = "";
+        this.lastName = "";
+        this.salary = 0;
+        this.departmentID = -1;
+        this.role = -1;
+    }
+
     public Worker(int workerId, String firstName, String lastName, float salary, int departmentID, int role) {
         this.workerId = workerId;
         this.firstName = firstName;

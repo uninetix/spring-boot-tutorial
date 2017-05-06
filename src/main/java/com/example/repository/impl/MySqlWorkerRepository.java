@@ -28,4 +28,11 @@ public class MySqlWorkerRepository implements WorkerRepository {
 
         return result;
     }
+
+    @Override
+    public boolean addWorker(Worker worker) {
+        jdbcTemplate.update("INSERT INTO worker (departmentid, first_name, last_name, role, salary) VALUES (?,?,?,?,?)",
+                worker.getDepartmentID(), worker.getFirstName(), worker.getLastName(), worker.getRole(), worker.getSalary());
+        return true;
+    }
 }
