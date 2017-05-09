@@ -6,8 +6,9 @@
 <html>
 <head>
     <title>Add new worker</title>
-    <link href="webjars/bootstrap/4.0.0-alpha.6-1/css/bootstrap.css" type="text/css" rel="stylesheet">
-    <script src="webjars/bootstrap/4.0.0-alpha.6-1/js/bootstrap.js"></script>
+    <link href="webjars/bootstrap/3.3.7-1/css/bootstrap.css" type="text/css" rel="stylesheet">
+    <script src="webjars/bootstrap/3.3.7-1/js/bootstrap.js"></script>
+    <script src="webjars/jquery/3.2.0/jquery.js"></script>
 </head>
 <body>
 <section>
@@ -19,34 +20,37 @@
     </div>
 </section>
 <div>
-    <form:form action="saveWorker" method="post" modelAttribute="worker">
-        <table>
+<section class="container">
+    <form:form action="saveWorker" method="post" modelAttribute="worker" class="form-horizontal">
+        <fieldset>
+            <legend>Add new worker</legend>
             <form:hidden path="workerId"/>
-            <tr>
-                <td>First name:</td>
-                <td><form:input path="firstName" /></td>
-            </tr>
-            <tr>
-                <td>Last name:</td>
-                <td><form:input path="lastName" /></td>
-            </tr>
-            <tr>
-                <td>Salary:</td>
-                <td><form:input path="salary" /></td>
-            </tr>
-            <tr>
-                <td>departmentID:</td>
-                <td><form:input path="departmentID" /></td>
-            </tr>
-            <tr>
-                <td>Role:</td>
-                <td><form:input path="role" /></td>
-            </tr>
-            <tr>
-                <td colspan="2" align="center"><input type="submit" value="Save"></td>
-            </tr>
-        </table>
+            <div class="form-group">
+                <label class="control-label col-lg-2 col-lg-2" for="firstName" >First name:</label>
+                <div class="col-lg-10"><form:input id="firstName" path="firstName" /></div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-lg-2 col-lg-2" for="lastName" >First name:</label>
+                <div class="col-lg-10"><form:input id="lastName" path="lastName" /></div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-lg-2 col-lg-2" for="salary" >First name:</label>
+                <div class="col-lg-10"><form:input id="salary" path="salary" /></div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-lg-2 col-lg-2" for="departmentID" >First name:</label>
+                <div class="col-lg-10"><form:input id="departmentID" path="departmentID" /></div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-lg-2 col-lg-2" for="role" >First name:</label>
+                <div class="col-lg-10"><form:input id="role" path="role" /></div>
+            </div>
+            <div class="form-group">
+                <div class="col-lg-offset-2 col-lg-10"><input type="submit" value="Save" id="btnAdd" class="btn btn-primary"></div>
+            </div>
+        </fieldset>
     </form:form>
+</section>
 </div>
 
 </body>
