@@ -30,19 +30,19 @@
                 <div class="col-lg-10"><form:input id="firstName" path="firstName" /></div>
             </div>
             <div class="form-group">
-                <label class="control-label col-lg-2 col-lg-2" for="lastName" >First name:</label>
+                <label class="control-label col-lg-2 col-lg-2" for="lastName" >Last name:</label>
                 <div class="col-lg-10"><form:input id="lastName" path="lastName" /></div>
             </div>
             <div class="form-group">
-                <label class="control-label col-lg-2 col-lg-2" for="salary" >First name:</label>
+                <label class="control-label col-lg-2 col-lg-2" for="salary" >Salary:</label>
                 <div class="col-lg-10"><form:input id="salary" path="salary" /></div>
             </div>
             <div class="form-group">
-                <label class="control-label col-lg-2 col-lg-2" for="departmentID" >First name:</label>
+                <label class="control-label col-lg-2 col-lg-2" for="departmentID" >Department ID:</label>
                 <div class="col-lg-10"><form:input id="departmentID" path="departmentID" /></div>
             </div>
             <div class="form-group">
-                <label class="control-label col-lg-2 col-lg-2" for="role" >First name:</label>
+                <label class="control-label col-lg-2 col-lg-2" for="role" >Role:</label>
                 <div class="col-lg-10"><form:input id="role" path="role" /></div>
             </div>
             <div class="form-group">
