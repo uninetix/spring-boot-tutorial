@@ -6,11 +6,11 @@
 <html>
 <head>
     <title>Add new worker</title>
-    <link href="webjars/bootstrap/3.3.7-1/css/bootstrap.css" type="text/css" rel="stylesheet">
-    <script src="webjars/bootstrap/3.3.7-1/js/bootstrap.js"></script>
-    <script src="webjars/jquery/3.2.0/jquery.js"></script>
+
+    <jsp:include page="includes/webjars.jsp"/>
 </head>
 <body>
+<jsp:include page="includes/menu.jsp"/>
 <section>
     <div class="jumbotron">
         <div class="container">

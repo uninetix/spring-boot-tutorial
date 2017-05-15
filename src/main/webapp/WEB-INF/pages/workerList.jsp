@@ -3,14 +3,15 @@
 <html>
 <head>
     <title>Lista pracowników</title>
-    <link href="webjars/bootstrap/3.3.7-1/css/bootstrap.css" type="text/css" rel="stylesheet">
-    <script src="webjars/bootstrap/3.3.7-1/js/bootstrap.js"></script>
-    <script src="webjars/jquery/3.2.0/jquery.js"></script>
+
+    <jsp:include page="includes/webjars.jsp"/>
 </head>
 <body>
+<jsp:include page="includes/menu.jsp"/>
 <div class="jumbotron">
     <div class="container">
-        <h1>Lista pracowników</h1>
+        <h1>Workers</h1>
+        <h2>List of Workers </h2>
     </div>
 </div>
 <div class="container">
