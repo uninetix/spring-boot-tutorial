@@ -32,8 +32,8 @@ public class InMemoryWorkerRepository implements WorkerRepository {
     }
 
     @Override
-    public boolean addWorker(Worker worker) {
-        return workers.add(worker);
+    public void addWorker(Worker worker) {
+        workers.add(worker);
     }
 
 }

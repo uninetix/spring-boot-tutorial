@@ -23,6 +23,8 @@ public class HRController {
     @Autowired
     @Qualifier("mySqlWorkerRepository")
     //@Qualifier("inMemoryWorkerRepository")
+    //@Qualifier("hibernateWorkerRepository")
+
     private WorkerRepository workerRepository;
 
     @RequestMapping("/getWorkerList")

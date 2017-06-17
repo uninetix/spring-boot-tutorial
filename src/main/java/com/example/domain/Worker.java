@@ -1,14 +1,27 @@
 package com.example.domain;
 
+import javax.persistence.*;
+
 /**
  * Created by Rodzice on 22.04.2017.
  */
+
+@Entity
 public class Worker {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "worker_id")
     private int workerId;
+    @Column(name = "first_name")
     private String firstName;
+    @Column(name = "last_name")
     private String lastName;
+    @Column(name = "salary")
     private float salary;
+    @Column(name = "department_id")
     private int departmentID;
+    @Column(name = "role")
     private int role;
 
     public Worker() {

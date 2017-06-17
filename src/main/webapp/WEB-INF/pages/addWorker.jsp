@@ -6,7 +6,7 @@
 <html>
 <head>
     <title>Add new worker</title>
-
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <jsp:include page="includes/webjars.jsp"/>
 </head>
 <body>

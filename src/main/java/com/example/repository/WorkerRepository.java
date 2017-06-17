@@ -9,5 +9,5 @@ import java.util.List;
  */
 public interface WorkerRepository {
     List<Worker> getAllWorkers();
-    boolean addWorker(Worker worker);
+    void addWorker(Worker worker);
 }
